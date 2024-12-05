@@ -8,8 +8,8 @@ from decimal import Decimal
 from bson import ObjectId
 from datetime import datetime, timedelta
 app = Flask(__name__)
-# client = MongoClient(os.getenv("MONGO_URI"))
-client = MongoClient(os.getenv('mongodb+srv://navaneethaenjam9:Nav%403010@cluster0.hbpvj.mongodb.net/myDatabase?retryWrites=true&w=majority&appName=Cluster0'))
+client = MongoClient(os.getenv("MONGO_URI"))
+# client = MongoClient(os.getenv('mongodb+srv://navaneethaenjam9:Nav%403010@cluster0.hbpvj.mongodb.net/myDatabase?retryWrites=true&w=majority&appName=Cluster0'))
 db = client.ShopEaseDb
 collection = db['products']
 users_collection = db['customer']
